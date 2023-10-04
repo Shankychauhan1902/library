@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Library Management System</h1>
+
+    <div id="form-container">
+        <h2>Add a Book</h2>
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="text" id="genre" placeholder="Genre" required>
+        <button onclick="addBook()">Add Book</button>
+    </div>
+
+    <div id="search-container">
+        <h2>Search Books</h2>
+        <input type="text" id="search" placeholder="Search by Title">
+    </div>
+
+    <div id="books-list">
+        <h2>Available Books</h2>
+        <ul id="list"></ul>
+    </div>
+
+    <div id="book-details" style="display: none;">
+        <h2>Book Details</h2>
+        <p><strong>Title:</strong> <span id="detail-title"></span></p>
+        <p><strong>Author:</strong> <span id="detail-author"></span></p>
+        <p><strong>Genre:</strong> <span id="detail-genre"></span></p>
+        <button onclick="hideDetails()">Close Details</button>
+    </div>
+
+    <div id="feedback-container">
+        <h2>Submit Feedback</h2>
+        <textarea id="feedback" placeholder="Your feedback..."></textarea>
+        <button onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+
+    <footer>
+        <p>Contact: library@email.com</p>
+        <p>&copy; 2023 Library Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
